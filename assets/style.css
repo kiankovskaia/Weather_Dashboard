@@ -3,5 +3,89 @@ main {
 }
 h1 {
     color:LightSkyBlue;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive, bold;
+}
+button {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.tile {
+  align-items: stretch;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  justify-content: space-around;
+}
+
+.button {
+  margin-left: 2%;
+}
+
+#bookmarks {
+  display: block;
+}
+
+.tile .is-child {
+  margin: 0 !important;
+  margin-top: 0px !important;
+  margin-right: 20px !important;
+  margin-bottom: 0px !important;
+  margin-left: 20px !important;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 15px 5px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem;
+  justify-content: space-around;
+}
+
+p {
+  display: block;
+}
+
+.day {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+body {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+html {
+  background-color: #c9c9c9;
+  color: #fff;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
