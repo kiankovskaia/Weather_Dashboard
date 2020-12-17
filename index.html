@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <script defer src="assets/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- nav bar -->
+      <nav class="navbar is-light level">
+        <header
+          class="container level-item has-text-centered is-vcentered is-size-1">
+          <h1>Weather Dashboard</h1>
+        </header>
+      </nav>
+
+      <main>
+        <!-- left side search que and 'bookmarks'  -->
+        <aside class="tile m-4 box" style="margin-top: 10px; margin-left: 20px">
+          <section class="field">
+            <section class="control">
+              <article class="columns">
+                <input
+                  class="input is-rounded column-8 is-fullwidth"
+                  id="cityName"
+                  type="text"
+                  placeholder="Search for a City"
+                />
+                <button type="button" class="btn btn-info">
+                  Search⛅
+                </button>
+              </article>
+              <article id="bookmarks"></article>
+            </section>
+          </section>
+        </aside>
+        
+        <section class="tile is-8 is-vertical">
+          <article
+            class="tile m-4 box"
+            style="
+              margin-top: 10px;
+              margin-left: 20px;
+              justify-content: flex-start;
+            "
+          >
+            <article class="wrapper">
+              <p class="info">
+                <span class="title" id="currentCityName"></span>
+              </p>
+
+              <p class="info"><span id="currentDate"></span></p>
+
+              <p class="info">
+                Temperature:
+                <span id="currentTemp"></span> F
+              </p>
+              <span id="icon"></span>
+              <p class="info">
+                Humitdity: <span id="currentHum"></span></p>
+              <p class="info">
+                Wind Speed:
+                <span id="currentWindSpeed"></span>
+              </p>
+
+              <p class="info">
+                UV Index:
+                <span id="currentUV"></span>
+              </p>
+            </article>
+          </article>
+          <section
+            class="tile"
+            style="margin-top: 10px; margin-left: 20px; padding-top: 10px"
+          >
+            <section class="tile is-parent">
+              <header id="forcast"></header>
+
+              <article
+                class="tile box day is-child"
+                style="margin-bottom: 0; margin-right: 20px"
+              >
+                <article id="day-0"></article>
+              </article>
+
+              <article
+                class="tile box day is-child"
+                style="margin-bottom: 0; margin-right: 20px"
+              >
+                <article id="day-1"></article>
+              </article>
+
+              <article
+                class="tile box day is-child"
+                style="margin-bottom: 0; margin-right: 20px"
+              >
+                <article id="day-2"></article>
+              </article>
+
+              <article
+                class="tile box day is-child"
+                style="margin-bottom: 0; margin-right: 20px"
+              >
+                <article id="day-3"></article>
+              </article>
+
+              <article
+                class="tile box day is-child"
+                style="margin-bottom: 0; margin-left: 20px"
+              >
+                <article id="day-4"></article>
+              </article>
+            </section>
+          </section>
+        </section>
+      </main>
+    </main>
+  </body>
+</html>
