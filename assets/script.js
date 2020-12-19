@@ -41,7 +41,7 @@ function renderWeather(cityName) {
     
     //add Humidity
 
-    $("#currentHum").text(response.main.humidity);
+    $("#currentHum").text(response.main.humidity) + "%";
    
     //add Wind speed
 
@@ -181,7 +181,7 @@ function fiveDayForcast(cityName) {
       $("#day-" + i).append(iconFore);
       // pull the temp
       var tempFore = $("<p>").text(
-        "Tempurature:\n" + response.list[i].main.temp + "°F"
+        "Temperature:\n" + response.list[i].main.temp + "°F"
       );
       // add the temp to the page
       $("#day-" + i).append(tempFore);

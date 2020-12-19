@@ -1,9 +1,15 @@
 main {
     background-image: url("cloud.jpg");
 }
+header {
+  background-color: #F8F8FF;
+  text-align:center;
+  padding:25px;
+}
 h1 {
     color:LightSkyBlue;
     font-family: 'Indie Flower', cursive, bold;
+    font-size:25px;
 }
 button {
   display: block;
