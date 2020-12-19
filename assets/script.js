@@ -41,14 +41,16 @@ function renderWeather(cityName) {
     
     //add Humidity
 
-    
+    $("#currentHum").text(response.main.humidity);
    
     //add Wind speed
 
-   
+    $("#currentWindSpeed").text(response.wind.speed);
 
     //add UV
   
+    $("#currentUV").text(response.wind.speed);
+
     // place latitude & longitude
     longitude = response.coord.lon;
     latitude = response.coord.lat;
